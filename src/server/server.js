@@ -40,7 +40,7 @@ app.listen(process.env.PORT || config.port, config.host, () => {
   fs.writeFileSync(
     path.resolve('.reactful.json'),
     JSON.stringify(
-      { ...app.locals.gVars, host: config.host, port: config.port },
+      { ...app.locals.gVars, host: config.host, port: process.env.PORT },
       null,
       2
     )
