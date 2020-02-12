@@ -36,7 +36,7 @@ app.get('/', async (req, res) => {
   }
 });
 
-app.listen(config.port, config.host, () => {
+app.listen(process.env.PORT || config.port, config.host, () => {
   fs.writeFileSync(
     path.resolve('.reactful.json'),
     JSON.stringify(
