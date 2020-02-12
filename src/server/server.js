@@ -5,7 +5,7 @@ import bodyParser from 'body-parser';
 import morgan from 'morgan';
 import serialize from 'serialize-javascript';
 
-import config from '.config';
+import config from './config';
 import { serverRenderer } from 'renderers/server';
 
 const app = express();
