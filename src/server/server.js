@@ -6,7 +6,7 @@ import morgan from 'morgan';
 import serialize from 'serialize-javascript';
 
 import config from './config';
-import { serverRenderer } from 'renderers/server';
+import { serverRenderer } from '../renderers/server';
 
 const app = express();
 app.enable('trust proxy');
