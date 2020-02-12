@@ -1,13 +1,29 @@
-$main: #555;
-
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
+$main: #343a40;
 
 body {
   #root {
     color: $main;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
+
+body, html {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.banner {
+  text-align: center;
+
+  h1 {
+    margin: 0;
+    padding: 10rem;
+    font-size: 3rem;
+  }
+
+  p {
+    margin: 0;
   }
 }
