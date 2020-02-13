@@ -1,1 +1,1 @@
-web: cross-env NODE_ENV=production NODE_PATH=./build node build/server/server.js
+web: node build/server/server.js
