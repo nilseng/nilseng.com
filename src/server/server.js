@@ -36,15 +36,15 @@ app.get('/', async (req, res) => {
   }
 });
 
-app.listen(process.env.PORT || config.port, process.env.HOST || config.host, () => {
+app.listen(process.env.PORT || config.port, () => {
   fs.writeFileSync(
     path.resolve('.reactful.json'),
     JSON.stringify(
-      { ...app.locals.gVars, host: process.env.HOST, port: process.env.PORT },
+      { ...app.locals.gVars, port: process.env.PORT },
       null,
       2
     )
   );
 
-  console.info(`Running on ${process.env.HOST}:${process.env.PORT}...`);
+  console.info(`Running on:${process.env.PORT}...`);
 });
