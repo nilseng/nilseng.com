@@ -1,1 +1,1 @@
-web: cross-env NODE_ENV=production NODE_PATH=./build pm2 start -i max build/server/server.js --update-env --name nilseng-reactProd
+web: cross-env NODE_ENV=production NODE_PATH=./build node build/server/server.js
