@@ -32,7 +32,11 @@ const config = {
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
       },
       {
-        test: /\.(svg|png|jpg|gif)$/,
+        test: /\.svg$/,
+        use: ['@svgr/webpack', 'file-loader'],
+      },
+      {
+        test: /\.(png|jpg|gif)$/,
         use: [
           'file-loader',
         ],
