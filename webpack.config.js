@@ -31,6 +31,12 @@ const config = {
         exclude: /node_modules/,
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
       },
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        use: [
+          'file-loader',
+        ],
+      },
     ],
   },
   optimization: {
@@ -51,7 +57,7 @@ const config = {
     }),
     new webpack.HashedModuleIdsPlugin(),
     new WebpackChunkHash(),
-    function() {
+    function () {
       this.plugin("done", (stats) => {
         let gVars = {};
         try {
