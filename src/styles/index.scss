@@ -9,16 +9,15 @@ body {
 }
 
 body, html {
-    min-height: 100vh;
+    background-color: $light;
     margin: 0;
     padding: 0;
     border: 0;
 }
 
 .banner {
-  text-align: center;
-  background-color: $light;
   min-height: 100vh;
+  text-align: center;
   background-image: url('../images/diamond.svg');
   background-size: 200px 200px;
   background-repeat: repeat-y;
@@ -33,4 +32,8 @@ body, html {
     margin-top: 0;
     margin-bottom: 0;
   }
+}
+
+#logo {
+  max-width: 100%;
 }
