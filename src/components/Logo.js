@@ -3,7 +3,7 @@ import React from 'react'
 export function Logo() {
   return (
     <>
-      <svg id="logo" width="480" height="480" xmlns="http://www.w3.org/2000/svg">
+      <svg id="logo" viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg">
         <defs>
           <linearGradient id="svg_4" x1="0" x2="1" y1="0" y2="1">
             <stop offset="0" stopColor="#343a40" stopOpacity="0.99609" />
