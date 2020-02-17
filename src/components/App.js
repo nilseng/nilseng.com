@@ -5,9 +5,9 @@ export function App({ initialData }) {
   return (
     <div>
       <div className={'banner'}>
-        <h1>Welcome to {initialData.appName}</h1>
+        <h1>{initialData.appName}</h1>
         <Logo />
-        <p>This is a react app made by Teodor Nilseng Danielsen.</p>
+        <p>by Teodor Nilseng Danielsen</p>
       </div>
     </div >
   );
