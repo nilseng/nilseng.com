@@ -8,15 +8,10 @@ export async function serverRenderer() {
     appName: 'nilseng.com',
   };
 
-  const pageData = {
-    title: `Welcome to ${initialData.appName}`,
-  };
-
   return Promise.resolve({
     initialData,
     initialMarkup: ReactDOMServer.renderToString(
       <App initialData={initialData} />
     ),
-    pageData,
   });
 }
