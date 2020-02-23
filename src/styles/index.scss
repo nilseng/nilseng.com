@@ -36,11 +36,15 @@ body, html {
   rect, path {
     cursor: pointer;
   }
+
+  rect:focus, path:focus {
+    outline: none;
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .rotate {
-    animation: App-logo-spin 1 2s ease-in;
+    animation: App-logo-spin 1 2s linear;
   }
 }
 
