@@ -6,12 +6,11 @@ export function Logo() {
 
   return (
     <>
-      <svg 
-        id="logo" 
+      <svg
+        id="logo"
         className={isRotating ? 'rotate' : ''}
-        onClick={()=>setIsRotating(true)}
-        onAnimationEnd={()=>setIsRotating(false)}
-        viewBox="0 0 480 480" 
+        onAnimationEnd={() => setIsRotating(false)}
+        viewBox="0 0 480 480"
         xmlns="http://www.w3.org/2000/svg">
         <defs>
           <linearGradient id="svg_4" x1="0" x2="1" y1="0" y2="1">
@@ -25,8 +24,8 @@ export function Logo() {
         </defs>
         <g className="layer">
           <title>Layer 1</title>
-          <rect fill="#f8f9fa" height="320" id="svg_1" rx="16" ry="16" stroke="url(#svg_4)" strokeWidth="5" transform="rotate(45 240 240)" width="320" x="80.00013" y="79.99992" />
-          <path d="m160.82815,336.83944l33.03826,-194.82399l90.33245,195.99999l35.12929,-184.24" fill="#000000" fillOpacity="0" id="svg_6" stroke="url(#svg_8)" strokeDasharray="null" strokeLinecap="null" strokeLinejoin="null" strokeWidth="33" transform="rotate(0.846079 240.078 240.015)" />
+          <rect onClick={() => setIsRotating(true)} fill="#f8f9fa" height="320" id="svg_1" rx="16" ry="16" stroke="url(#svg_4)" strokeWidth="5" transform="rotate(45 240 240)" width="320" x="80.00013" y="79.99992" />
+          <path onClick={() => setIsRotating(true)} d="m160.82815,336.83944l33.03826,-194.82399l90.33245,195.99999l35.12929,-184.24" fill="#000000" fillOpacity="0" id="svg_6" stroke="url(#svg_8)" strokeDasharray="null" strokeLinecap="null" strokeLinejoin="null" strokeWidth="33" transform="rotate(0.846079 240.078 240.015)" />
         </g>
       </svg>
     </>

@@ -33,14 +33,14 @@ body, html {
   max-height: 50vh;
   filter: drop-shadow(0rem 2rem 1rem $dark);
 
-  rect {
+  rect, path {
     cursor: pointer;
   }
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .rotate {
-    animation: App-logo-spin 1 2s ease-in-out;
+    animation: App-logo-spin 1 2s ease-in;
   }
 }
 
