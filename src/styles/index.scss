@@ -36,15 +36,12 @@ body, html {
   rect, path {
     cursor: pointer;
   }
-
-  rect:focus, path:focus {
-    outline: none;
-  }
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .rotate {
     animation: App-logo-spin 1 2s linear;
+    -webkit-animation: App-logo-spin 1 2s linear;
   }
 }
 
@@ -54,5 +51,14 @@ body, html {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes App-logo-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
   }
 }
