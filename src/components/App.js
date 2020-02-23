@@ -1,9 +1,9 @@
-import React, { useLayoutEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Logo } from './Logo'
 
 function useWindowHeight() {
   const [height, setHeight] = useState(0)
-  useLayoutEffect(() => {
+  useEffect(() => {
     function updateHeight() {
       setHeight(window.innerHeight)
     }
@@ -16,6 +16,7 @@ function useWindowHeight() {
 
 export function App() {
   const height = useWindowHeight()
+  const rotate = false
   return (
     <div>
       <div className={'banner'} style={{ minHeight: height }}>

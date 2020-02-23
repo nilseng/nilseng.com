@@ -1,9 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 export function Logo() {
+
+  const [isRotating, setIsRotating] = useState(false)
+
   return (
     <>
-      <svg id="logo" viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg">
+      <svg 
+        id="logo" 
+        className={isRotating ? 'rotate' : ''}
+        onClick={()=>setIsRotating(true)}
+        onAnimationEnd={()=>setIsRotating(false)}
+        viewBox="0 0 480 480" 
+        xmlns="http://www.w3.org/2000/svg">
         <defs>
           <linearGradient id="svg_4" x1="0" x2="1" y1="0" y2="1">
             <stop offset="0" stopColor="#343a40" stopOpacity="0.99609" />
