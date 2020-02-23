@@ -1,8 +1,21 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+
+function useKeyPress(isRotating, setIsRotating) {
+  useEffect(() => {
+    document.addEventListener('keydown', handleKeyPress)
+    return () => document.removeEventListener('keydown', handleKeyPress)
+  },[])
+  const handleKeyPress = (event) => {
+    if (!isRotating && event.key === 'Enter') {
+      setIsRotating(true)
+    }
+  }
+}
 
 export function Logo() {
 
   const [isRotating, setIsRotating] = useState(false)
+  useKeyPress(isRotating, setIsRotating)
 
   return (
     <>
