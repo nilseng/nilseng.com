@@ -32,7 +32,10 @@ body, html {
   max-width: 80vw;
   max-height: 50vh;
   filter: drop-shadow(0rem 2rem 1rem $dark);
-  cursor: pointer;
+
+  rect {
+    cursor: pointer;
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {
