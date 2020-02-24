@@ -40,8 +40,8 @@ body, html {
 
 @media (prefers-reduced-motion: no-preference) {
   .rotate {
-    animation: App-logo-spin 1 2s linear;
-    -webkit-animation: App-logo-spin 1 5s linear;
+    animation: App-logo-spin 1 infinite linear;
+    -webkit-animation: App-logo-spin 1 infinite linear;
   }
 }
 
