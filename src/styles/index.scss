@@ -40,25 +40,25 @@ body, html {
 
 @media (prefers-reduced-motion: no-preference) {
   .rotate {
-    animation: App-logo-spin 1 infinite linear;
-    -webkit-animation: App-logo-spin 1 infinite linear;
+    animation: App-logo-spin 1 1s ease-in-out;
+    -webkit-animation: App-logo-spin 1 1s ease-in-out;
   }
 }
 
 @keyframes App-logo-spin {
   from {
-    transform: rotateX(0deg);
+    transform: rotateZ(0deg);
   }
   to {
-    transform: rotateX(360deg);
+    transform: rotateZ(360deg);
   }
 }
 
 @-webkit-keyframes App-logo-spin {
   from {
-    -webkit-transform: rotateX(0deg);
+    -webkit-transform: rotateZ(0deg);
   }
   to {
-    -webkit-transform: rotateX(360deg);
+    -webkit-transform: rotateZ(360deg);
   }
 }
