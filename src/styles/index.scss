@@ -36,6 +36,8 @@ body, html {
 
   rect, path {
     cursor: pointer;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
   }
 }
 
