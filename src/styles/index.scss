@@ -41,19 +41,10 @@ body, html {
 
 @media (prefers-reduced-motion: no-preference) {
   .rotate {
-    backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
-    animation: App-logo-spin 1 2s;
+    backface-visibility: hidden;
     -webkit-animation: App-logo-spin 1 2s;
-  }
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotateZ(0deg);
-  }
-  to {
-    transform: rotateZ(360deg);
+    animation: App-logo-spin 1 2s;
   }
 }
 
@@ -63,5 +54,14 @@ body, html {
   }
   to {
     -webkit-transform: rotateZ(360deg);
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
   }
 }
