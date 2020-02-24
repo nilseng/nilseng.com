@@ -43,8 +43,8 @@ body, html {
   .rotate {
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
-    animation: App-logo-spin 1 2s ease-in-out;
-    -webkit-animation: App-logo-spin 1 2s ease-in-out;
+    animation: App-logo-spin 1 2s;
+    -webkit-animation: App-logo-spin 1 2s;
   }
 }
 
